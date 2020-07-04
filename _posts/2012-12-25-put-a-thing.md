@@ -1,7 +1,7 @@
 ---
 category: Stuff
 url_path: '/stuff/:id'
-title: 'Update a thing'
+title: 'Pg5'
 type: 'PUT'
 
 layout: null
