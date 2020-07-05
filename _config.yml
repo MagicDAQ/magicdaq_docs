@@ -1,6 +1,6 @@
 ---
 exclude: ['README.markdown']
 permalink: ':title'
-highlighter: rouge
+highlighter: Pygments
 safe: false
 title: 'MagicDAQ Docs'
