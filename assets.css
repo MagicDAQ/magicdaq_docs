@@ -588,12 +588,30 @@ code {
   background: #119bdf;
 }
 
+/* Counter */
+#content article.Counter a h2 code {
+  color: #119bdf;
+}
+
+#content article.Counter a h2 code b {
+  background: #119bdf;
+}
+
 /* POST */
 #content article.POST a h2 code {
   color: #52ce0e;
 }
 
 #content article.POST a h2 code b {
+  background: #52ce0e;
+}
+
+/* Analog-Output */
+#content article.Analog-Output a h2 code {
+  color: #52ce0e;
+}
+
+#content article.Analog-Output a h2 code b {
   background: #52ce0e;
 }
 
@@ -606,12 +624,30 @@ code {
   background: #e08f10;
 }
 
+/* Digital-IO */
+#content article.Digital-IO a h2 code {
+  color: #e08f10;
+}
+
+#content article.Digital-IO a h2 code b {
+  background: #e08f10;
+}
+
 /* DELETE */
 #content article.DELETE a h2 code {
   color: #e02a10;
 }
 
 #content article.DELETE a h2 code b {
+  background: #e02a10;
+}
+
+/* Analog-Input */
+#content article.Analog-Input a h2 code {
+  color: #e02a10;
+}
+
+#content article.Analog-Input a h2 code b {
   background: #e02a10;
 }
 

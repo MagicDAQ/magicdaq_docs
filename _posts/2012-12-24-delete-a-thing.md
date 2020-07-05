@@ -4,7 +4,7 @@ title: 'configure_analog_output_sine_wave()'
 type: 'Counter'
 url_path: 'P0.0 - P0.7'
 
-layout: null
+layout: default
 ---
 
 Method configures analog output sine wave.
@@ -16,13 +16,11 @@ Method configures analog output sine wave.
 
 ### Definition 
 
-```python
-def configure_analog_output_sine_wave(self, channel: int, sine_frequency: float, total_cycle_count=0, amplitude=5):
-```
 
 ```python
 print ('This is a monkey!')
 ```
+
 
 ### Request
 
