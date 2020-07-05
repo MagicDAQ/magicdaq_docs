@@ -448,7 +448,7 @@ code {
   overflow: auto;
   position: absolute;
   top: 0;
-  width: 300px;
+  width: 320px;
 }
 
 #sidebar h1 {
@@ -515,8 +515,8 @@ code {
 /* padding-left must be 20 more than SIDEBAR width */
 #content {
   padding: 20px;
-  padding-left: 330px;
-  max-width: 700px;
+  padding-left: 350px;
+  max-width: 1000px;
 }
 
 #content .control {
@@ -665,8 +665,9 @@ code {
   width: 100%;
 }
 
+/* border: 1px solid was e2e7ea, changed to eef1f2 cause it was cause border did not go to full right of screen */
 #content .body code {
-  border: 1px solid #e2e7ea;
+  border: 1px solid #eef1f2;
   background: #eef1f2;
   border-radius: 2px;
   -moz-border-radius: 2px;
