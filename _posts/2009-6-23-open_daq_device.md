@@ -1,8 +1,6 @@
 ---
-category: Stuff
-title: 'configure_analog_output_sine_wave()'
-type: 'Analog-Output'
-url_path: 'AO0 - AO1'
+category: Getting Started
+title: 'open_daq_device()'
 
 layout: default
 ---
