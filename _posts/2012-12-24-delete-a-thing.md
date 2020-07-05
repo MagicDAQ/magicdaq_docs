@@ -1,8 +1,8 @@
 ---
 category: Stuff
-url_path: '/stuff/:id'
-title: 'Pg6'
-type: 'DELETE'
+title: 'configure_analog_output_sine_wave()'
+type: 'Counter'
+url_path: 'P0.0 - P0.7'
 
 layout: null
 ---

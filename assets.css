@@ -439,6 +439,7 @@ code {
 }
 
 /* SIDEBAR */
+/* Set width wide enough to accommodate long method names. Was originally 240 */
 #sidebar {
   background: #191919;
   color: #fff;
@@ -447,7 +448,7 @@ code {
   overflow: auto;
   position: absolute;
   top: 0;
-  width: 240px;
+  width: 300px;
 }
 
 #sidebar h1 {
@@ -511,9 +512,10 @@ code {
 }
 
 /* References */
+/* padding-left must be 20 more than SIDEBAR width */
 #content {
   padding: 20px;
-  padding-left: 260px;
+  padding-left: 330px;
   max-width: 700px;
 }
 
