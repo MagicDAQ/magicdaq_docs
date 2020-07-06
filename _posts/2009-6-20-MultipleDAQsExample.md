@@ -7,36 +7,83 @@ url_path: 'CODE EXAMPLE'
 layout: default
 ---
 
-Method configures analog output sine wave.
+Example showing how to:
 
-### Definition 
+* Find serial numbers of all DAQs connected to the system
+* Connect to a specific DAQ using it's serial number
 
-```python
-configure_analog_output_sine_wave(channel, sine_frequency, total_cycle_count=0, amplitude=5)
-```
-
-### Required Arguments
-
-* `channel: int` DAQ pin number. For example, channel 'AO0' is Analog Output pin `0`. There are two channels: `0` and `1`.
-* `sine_frequency: float` The frequency of the sine waveform in Hz. Valid range from 1 Hz (`1`) to 31.25kHz (`31250`)
-
-### Optional Arguments
-
-* `total_cycle_count: int` The total number of cycles you want to output after a single start command.
-    * Valid range from 1 cycle (`1`) to 10000 cycles (`10000`).
-    * Omit this optional parameter if you want the PWM waveform to continue until stopped with a stop command.  
-* `amplitude: float` The sine wave will range from 0V to the maximum amplitude you specify.
-    * Valid range from 0.1V (`0.1`) to 5V (`5`).
-    * Omitting this optional parameters will result in the sine wave ranging between 0 and 5 volts.
+It is possible to use multiple DAQs at the same time.
 
 ### Example Code
 
 ```python
 
-# Create MagicDAQDevice() object
+# Connect 1 or multiple MagicDAQs to your system using the USB cables.
+# Feel free to use a USB hub to connect multiple DAQs to your computer.
+
+# Import the standard time module
+import time
+
+# Import MagicDAQDevice object
+from magicdaq.api_class import MagicDAQDevice
+
+# Create daq_one object
 daq_one = MagicDAQDevice()
 
-# Configure sine wave output on AO0 with 500Hz, indefinente operation, and 4V amplitude
-daq_one.configure_analog_output_sine_wave(0, 500, amplitude=4)
+# Get the serial numbers of all DAQs that are connected to your computer.
+daqs_serial_number_list = daq_one.list_all_daqs()
+print('List of DAQ Serial Numbers: '+str(daqs_serial_number_list))
+print('Thre are '+str(len(daqs_serial_number_list))+' DAQs in total connected to your system.')
+
+# If there is at least 1 DAQ, connect to it and read its serial number
+if len(daqs_serial_number_list) >= 1:
+    print('Attempting to connect to DAQ serial number: '+str(daqs_serial_number_list[0]))
+    daq_one.open_daq_device(daq_serial_number = daqs_serial_number_list[0])
+    
+    # You can now do useful things with daq_one
+    # For example, you can set digital I/O pin P0.0 to HIGH
+    print('Setting Pin P0.0 HIGH on daq_one')
+    daq_one.set_digital_ouput(0,1)
+    
+    # We will be sleeping to allow time to measure the P0.0 with a multimeter
+    # This flag indicates if the sleep period has been performed
+    sleep_has_hapened = False
+    
+    # Is there a 2nd DAQ connected to the System?
+    # If so, you can simultaneously connect to it and do stuff.
+    if len(daqs_serial_number_list) >= 2:
+        print('Attempting to connect to DAQ serial number: '+str(daqs_serial_number_list[1]))
+        
+        # You need to create another MagicDAQDevice object
+        daq_two = MagicDAQDevice()
+        # Connect to the 2nd DAQ
+        daq_two.open_daq_device(daq_serial_number = daqs_serial_number_list[1])
+        
+        # You can now do useful things with daq_two
+        # For example, you can set digital I/O pin P0.0 to LOW
+        print('Setting Pin P0.0 LOW on daq_two')
+        daq_two.set_digital_ouput(0,0)
+        
+        print ('Sleeping for 5 sec. to allow time to measure P0.0 pin with multimeter.')
+        time.sleep(5)
+        # Set the sleep_has_hapended flag to True so the sleep period is not repeated
+        sleep_has_hapened = True
+        
+        # We are done with daq_two so we can close it
+        print('Closing daq_two')
+        # Close daq_two
+        daq_two.close_daq_device()
+    
+    # If the sleep period has not already occurred, do it now
+    if not sleep_has_hapened:
+        print ('Sleeping for 5 sec. to allow time to measure P0.0 pin with multimeter.')
+        time.sleep(5)
+    
+    # We are done with daq_two so we can close it
+    print('Closing daq_one')
+    # Close daq_one
+    daq_one.close_daq_device()
+
+print ('Multiple DAQs Example Script COMPLETED.')
 
 ```
