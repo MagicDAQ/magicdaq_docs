@@ -1,40 +1,50 @@
 ---
 category: Getting Started
-title: 'MagicDAQ Basics'
+title: 'MagicDAQ Hello World Example'
+type: 'System'
+url_path: 'CODE EXAMPLE'
 
 layout: default
 ---
 
-Method configures analog output sine wave.
-
-### Definition 
+### Import MagicDAQDevice Object
+Every Python script must import the MagicDAQDevice object. 
 
 ```python
-configure_analog_output_sine_wave(channel, sine_frequency, total_cycle_count=0, amplitude=5)
+from magicdaq.api_class import MagicDAQDevice
 ```
 
-### Required Arguments
+All features of the MagicDAQDevice are accessed by creating a MagicDAQDevice object and calling methods on this object.
+* Create `MagicDAQDevice` object
+* Open the DAQ with `open_daq_device()`
+* Do usefull things with the DAQ by calling methods on the object
+* Close the DAQ with `close_daq_device()`
 
-* `channel: int` DAQ pin number. For example, channel 'AO0' is Analog Output pin `0`. There are two channels: `0` and `1`.
-* `sine_frequency: float` The frequency of the sine waveform in Hz. Valid range from 1 Hz (`1`) to 31.25kHz (`31250`)
-
-### Optional Arguments
-
-* `total_cycle_count: int` The total number of cycles you want to output after a single start command.
-    * Valid range from 1 cycle (`1`) to 10000 cycles (`10000`).
-    * Omit this optional parameter if you want the PWM waveform to continue until stopped with a stop command.  
-* `amplitude: float` The sine wave will range from 0V to the maximum amplitude you specify.
-    * Valid range from 0.1V (`0.1`) to 5V (`5`).
-    * Omitting this optional parameters will result in the sine wave ranging between 0 and 5 volts.
-
-### Example Code
+### Hello World Example Code
 
 ```python
+# Use the USB cable to plug MagicDAQ into your computer
 
-# Create MagicDAQDevice() object
+# Import MagicDAQDevice object
+from magicdaq.api_class import MagicDAQDevice
+
+# Create daq_one object
 daq_one = MagicDAQDevice()
 
-# Configure sine wave output on AO0 with 500Hz, indefinente operation, and 4V amplitude
-daq_one.configure_analog_output_sine_wave(0, 500, amplitude=4)
+# Connect to the MagicDAQ
+daq_one.open_daq_device()
 
+# Do use full things with the DAQ
+# For example, you can read a digital pin's state
+print ('This is Digital Pin P0.0 State: '+str(daq_one.read_digital_input(0)))
+
+# We are done using the MagicDAQ, so close it
+daq_one.close_daq_device()
+
+```
+
+### Expected Output
+
+```
+This is Digital Pin P0.0 State: 1
 ```

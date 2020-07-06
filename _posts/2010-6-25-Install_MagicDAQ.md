@@ -4,36 +4,34 @@ title: 'Install MagicDAQ'
 layout: default
 ---
 
-Method configures analog output sine wave.
+### Prerequisites  
+MagicDAQ must be run with Python 3 on Windows. MagicDAQ is downloaded using pip.
 
-### Definition 
+* You can download the latest version of Python [here](https://www.python.org/downloads/)
+* Don't forget to [add Python to the Windows PATH](https://datatofish.com/add-python-to-windows-path/)
 
-```python
-configure_analog_output_sine_wave(channel, sine_frequency, total_cycle_count=0, amplitude=5)
+You can test if your system is ready to go by [opening a command prompt](https://www.lifewire.com/how-to-open-command-prompt-2618089) and entering:
+
+`python -m pip`
+
+You are ready to download MagicDAQ if you get back something like the following:
 ```
+Usage:
+  C:\Users\srh\AppData\Local\Programs\Python\Python36\py3.exe -m pip <command> [options]
 
-### Required Arguments
-
-* `channel: int` DAQ pin number. For example, channel 'AO0' is Analog Output pin `0`. There are two channels: `0` and `1`.
-* `sine_frequency: float` The frequency of the sine waveform in Hz. Valid range from 1 Hz (`1`) to 31.25kHz (`31250`)
-
-### Optional Arguments
-
-* `total_cycle_count: int` The total number of cycles you want to output after a single start command.
-    * Valid range from 1 cycle (`1`) to 10000 cycles (`10000`).
-    * Omit this optional parameter if you want the PWM waveform to continue until stopped with a stop command.  
-* `amplitude: float` The sine wave will range from 0V to the maximum amplitude you specify.
-    * Valid range from 0.1V (`0.1`) to 5V (`5`).
-    * Omitting this optional parameters will result in the sine wave ranging between 0 and 5 volts.
-
-### Example Code
-
-```python
-
-# Create MagicDAQDevice() object
-daq_one = MagicDAQDevice()
-
-# Configure sine wave output on AO0 with 500Hz, indefinente operation, and 4V amplitude
-daq_one.configure_analog_output_sine_wave(0, 500, amplitude=4)
-
+Commands:
 ```
+If you see something different, [please check that pip is installed and working.](https://projects.raspberrypi.org/en/projects/using-pip-on-windows)
+
+If you need a bit of help getting started with MagicDAQ, feel free to email us at: 
+
+> support@magicdaq.com
+
+### Install MagicDAQ with Pip
+
+Open a command prompt and enter:
+
+`python -m pip magicdaq`
+
+[MagicDAQ is hosted on PyPi](https://pypi.org/project/magicdaq/)
+
