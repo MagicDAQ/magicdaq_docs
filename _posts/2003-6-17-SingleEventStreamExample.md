@@ -2,7 +2,7 @@
 category: Analog Input Stream
 title: 'Single Event Stream Example'
 type: 'Analog-Input'
-url_path: 'AI0 - AI7'
+url_path: 'CODE EXAMPLE'
 
 layout: default
 ---

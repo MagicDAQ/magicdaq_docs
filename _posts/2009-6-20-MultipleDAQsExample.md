@@ -1,6 +1,8 @@
 ---
 category: Getting Started
 title: 'Multiple DAQs Example'
+type: 'System'
+url_path: 'CODE EXAMPLE'
 
 layout: default
 ---

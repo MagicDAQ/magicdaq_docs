@@ -1,6 +1,7 @@
 ---
 category: Getting Started
 title: 'open_daq_device()'
+type: 'System'
 
 layout: default
 ---

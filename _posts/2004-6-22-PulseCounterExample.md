@@ -2,7 +2,7 @@
 category: Pulse Counter
 title: 'Pulse Counter Example'
 type: 'Counter'
-url_path: 'CTR0'
+url_path: 'CODE EXAMPLE'
 
 layout: default
 ---

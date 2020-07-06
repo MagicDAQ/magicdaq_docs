@@ -2,8 +2,7 @@
 category: Analog Output
 title: 'Analog Output Example'
 type: 'Analog-Output'
-url_path: 'AO0 - AO1'
-
+url_path: 'CODE EXAMPLE'
 layout: default
 ---
 

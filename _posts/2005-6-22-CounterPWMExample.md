@@ -2,7 +2,7 @@
 category: Counter PWM
 title: 'Counter PWM Example'
 type: 'Counter'
-url_path: 'CTR0'
+url_path: 'CODE EXAMPLE'
 
 layout: default
 ---

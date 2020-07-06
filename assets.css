@@ -447,7 +447,7 @@ code {
   background: #191919;
   color: #fff;
   float: left;  
-  height: 230%;
+  height: 240%;
   overflow: auto;
   position: absolute;
   top: 0;
@@ -625,6 +625,24 @@ code {
 
 #content article.PUT a h2 code b {
   background: #e08f10;
+}
+
+/* Hardware */
+#content article.Hardware a h2 code {
+  color: #30bf94;
+}
+
+#content article.Hardware a h2 code b {
+  background: #30bf94;
+}
+
+/* System */
+#content article.System a h2 code {
+  color: #6952ff;
+}
+
+#content article.System a h2 code b {
+  background: #6952ff;
 }
 
 /* Digital-IO */

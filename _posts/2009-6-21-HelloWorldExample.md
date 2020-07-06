@@ -1,6 +1,8 @@
 ---
 category: Getting Started
 title: 'Hello World Example'
+type: 'System'
+url_path: 'CODE EXAMPLE'
 
 layout: default
 ---

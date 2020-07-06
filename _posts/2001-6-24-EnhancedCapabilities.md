@@ -1,8 +1,7 @@
 ---
-category: Analog Input Stream
-title: 'Continuous Event Stream Example'
-type: 'Analog-Input'
-url_path: 'CODE EXAMPLE'
+category: Hardware
+title: 'Enhanced Capabilities (M&A Board)'
+type: 'Hardware'
 
 layout: default
 ---

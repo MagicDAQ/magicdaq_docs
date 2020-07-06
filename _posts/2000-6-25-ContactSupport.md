@@ -1,8 +1,6 @@
 ---
-category: Analog Input Stream
-title: 'Continuous Event Stream Example'
-type: 'Analog-Input'
-url_path: 'CODE EXAMPLE'
+category: Support
+title: 'Feedback & Support'
 
 layout: default
 ---

@@ -1,6 +1,7 @@
 ---
 category: Getting Started
 title: 'list_all_daqs()'
+type: 'System'
 
 layout: default
 ---

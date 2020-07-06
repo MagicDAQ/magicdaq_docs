@@ -2,7 +2,7 @@
 category: Basic Digital I/O
 title: 'Digital IO Example'
 type: 'Digital-IO'
-url_path: 'P0.0 - P0.7'
+url_path: 'CODE EXAMPLE'
 
 layout: default
 ---

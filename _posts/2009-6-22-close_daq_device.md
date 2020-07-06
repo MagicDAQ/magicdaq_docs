@@ -1,6 +1,7 @@
 ---
 category: Getting Started
 title: 'close_daq_device()'
+type: 'System'
 
 layout: default
 ---

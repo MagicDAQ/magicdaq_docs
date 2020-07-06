@@ -1,8 +1,7 @@
 ---
-category: Analog Input Stream
-title: 'Continuous Event Stream Example'
-type: 'Analog-Input'
-url_path: 'CODE EXAMPLE'
+category: Get System Info
+title: 'get_api_version()'
+type: 'System'
 
 layout: default
 ---

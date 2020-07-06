@@ -2,7 +2,7 @@
 category: Basic Analog Input
 title: 'Basic Analog Input Example'
 type: 'Analog-Input'
-url_path: 'AI0 - AI7'
+url_path: 'CODE EXAMPLE'
 
 layout: default
 ---
