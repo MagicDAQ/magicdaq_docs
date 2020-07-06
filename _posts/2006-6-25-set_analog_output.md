@@ -1,8 +1,8 @@
 ---
-category: Basic Digital I/O
-title: 'read_digital_input()'
-type: 'Digital-IO'
-url_path: 'P0.0 - P0.7'
+category: Analog Output
+title: 'set_analog_output()'
+type: 'Analog-Output'
+url_path: 'AO0 - AO1'
 
 layout: default
 ---

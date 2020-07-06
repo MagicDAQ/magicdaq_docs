@@ -1,7 +1,7 @@
 ---
 category: Basic Digital I/O
 title: 'set_digital_output()'
-type: 'Analog-Input'
+type: 'Digital-IO'
 url_path: 'P0.0 - P0.7'
 
 layout: default

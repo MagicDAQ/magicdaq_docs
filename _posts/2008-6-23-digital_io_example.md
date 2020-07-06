@@ -1,7 +1,7 @@
 ---
 category: Basic Digital I/O
 title: 'Digital IO Example'
-type: 'Analog-Input'
+type: 'Digital-IO'
 url_path: 'P0.0 - P0.7'
 
 layout: default
