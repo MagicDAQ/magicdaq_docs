@@ -408,6 +408,8 @@ body {
   background: #fff;
 }
 
+
+/* By adding width:270px you can increase the width of the search box, but it does not fix long exact search bug */
 body,
 input,
 textarea {
@@ -440,11 +442,12 @@ code {
 
 /* SIDEBAR */
 /* Set width wide enough to accommodate long method names. Was originally 240 */
+/* Setting height to > 100% to accommodate all the links*/
 #sidebar {
   background: #191919;
   color: #fff;
   float: left;  
-  height: 100%;
+  height: 180%;
   overflow: auto;
   position: absolute;
   top: 0;
