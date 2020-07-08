@@ -1,23 +1,3 @@
----
-category: Getting Started
-title: 'Multiple DAQs Example'
-type: 'System'
-url_path: 'CODE EXAMPLE'
-
-layout: default
----
-
-Example showing how to:
-
-* Find serial numbers of all DAQs connected to the system
-* Connect to a specific DAQ using it's serial number
-
-It is possible to use multiple DAQs at the same time.
-
-### Example Code
-
-```python
-
 # Connect 1 or multiple MagicDAQs to your system using the USB cables.
 # Feel free to use a USB hub to connect multiple DAQs to your computer.
 
@@ -34,16 +14,17 @@ daq_one = MagicDAQDevice()
 daqs_serial_number_list = daq_one.list_all_daqs()
 print('List of DAQ Serial Numbers: '+str(daqs_serial_number_list))
 print('Thre are '+str(len(daqs_serial_number_list))+' DAQs in total connected to your system.')
+print('')
 
 # If there is at least 1 DAQ, connect to it and read its serial number
 if len(daqs_serial_number_list) >= 1:
     print('Attempting to connect to DAQ serial number: '+str(daqs_serial_number_list[0]))
-    daq_one.open_daq_device(daq_serial_number = daqs_serial_number_list[0])
+    daq_one.open_daq_device(daq_serial_num = daqs_serial_number_list[0])
     
     # You can now do useful things with daq_one
     # For example, you can set digital I/O pin P0.0 to HIGH
     print('Setting Pin P0.0 HIGH on daq_one')
-    daq_one.set_digital_ouput(0,1)
+    daq_one.set_digital_output(0,1)
     
     # We will be sleeping to allow time to measure the P0.0 with a multimeter
     # This flag indicates if the sleep period has been performed
@@ -57,12 +38,12 @@ if len(daqs_serial_number_list) >= 1:
         # You need to create another MagicDAQDevice object
         daq_two = MagicDAQDevice()
         # Connect to the 2nd DAQ
-        daq_two.open_daq_device(daq_serial_number = daqs_serial_number_list[1])
+        daq_two.open_daq_device(daq_serial_num = daqs_serial_number_list[1])
         
         # You can now do useful things with daq_two
         # For example, you can set digital I/O pin P0.0 to LOW
         print('Setting Pin P0.0 LOW on daq_two')
-        daq_two.set_digital_ouput(0,0)
+        daq_two.set_digital_output(0,0)
         
         print ('Sleeping for 5 sec. to allow time to measure P0.0 pin with multimeter.')
         time.sleep(5)
@@ -85,5 +66,3 @@ if len(daqs_serial_number_list) >= 1:
     daq_one.close_daq_device()
 
 print ('Multiple DAQs Example Script COMPLETED.')
-
-```

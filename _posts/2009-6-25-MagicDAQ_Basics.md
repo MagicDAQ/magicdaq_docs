@@ -23,6 +23,7 @@ All features of the MagicDAQDevice are accessed by creating a MagicDAQDevice obj
 ### Hello World Example Code
 
 ```python
+
 # Use the USB cable to plug MagicDAQ into your computer
 
 # Import MagicDAQDevice object

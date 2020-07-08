@@ -1,5 +1,5 @@
 ---
-category: Getting Started
+category: Get System Info
 title: 'list_all_daqs()'
 type: 'System'
 

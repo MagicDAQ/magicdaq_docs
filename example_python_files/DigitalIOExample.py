@@ -1,16 +1,3 @@
----
-category: Basic Digital I/O
-title: 'Digital IO Example'
-type: 'Digital-IO'
-url_path: 'CODE EXAMPLE'
-
-layout: default
----
-
-### Example Code
-
-```python
-
 # Use the USB cable to plug MagicDAQ into your computer
 
 # Import MagicDAQDevice object
@@ -32,12 +19,3 @@ daq_one.set_digital_output(1,0)
 
 # We are done using the MagicDAQ, so close it
 daq_one.close_daq_device()
-
-```
-
-### Expected Output
-
-```
-This is Digital Pin P0.0 State: 1
-Now setting P0.1 to LOW.
-```
