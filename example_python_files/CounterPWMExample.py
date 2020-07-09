@@ -1,16 +1,3 @@
----
-category: Counter PWM
-title: 'Counter PWM Example'
-type: 'Counter'
-url_path: 'CODE EXAMPLE'
-
-layout: default
----
-
-### Example Code
-
-```python
-
 # Use the USB cable to plug MagicDAQ into your computer
 
 # Import standard time module
@@ -39,11 +26,3 @@ daq_one.stop_counter_pwm()
 
 # We are done using the MagicDAQ, so close it
 daq_one.close_daq_device()
-
-```
-
-### Expected Output
-
-```
-Pausing for 10 sec to allow time to observe with oscilloscope waveform on pin CTR0
-```

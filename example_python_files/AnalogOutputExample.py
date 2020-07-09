@@ -1,15 +1,3 @@
----
-category: Analog Output
-title: 'Analog Output Example'
-type: 'Analog-Output'
-url_path: 'CODE EXAMPLE'
-layout: default
----
-
-### Example Code
-
-```python
-
 # Use the USB cable to plug MagicDAQ into your computer
 
 # Import standard time module
@@ -48,12 +36,3 @@ daq_one.stop_analog_output_wave(1)
 
 # We are done using the MagicDAQ, so close it
 daq_one.close_daq_device()
-
-```
-
-### Expected Output
-
-```
-Pausing for 10 sec to allow time to measure pin AO0 (should be constant 2.5V)
-Pausing for 10 sec to allow time to observe with oscilloscope waveforms on pins AO0 and AO1
-```

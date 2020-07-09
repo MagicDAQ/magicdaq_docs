@@ -7,36 +7,23 @@ url_path: 'CTR0'
 layout: default
 ---
 
-Method configures analog output sine wave.
+Method configures counter PWM output.
+* The PWM waveform is output on the channel labeled 'CTR0' on the DAQ.
+* The PWM waveform is 3.3V amplitude
 
 ### Definition 
 
 ```python
-configure_analog_output_sine_wave(channel, sine_frequency, total_cycle_count=0, amplitude=5)
+configure_counter_pwm(pwm_frequency: float, pwm_duty_cycle: float, total_cycle_count = 0)
 ```
 
 ### Required Arguments
 
-* `channel: int` DAQ pin number. For example, channel 'AO0' is Analog Output pin `0`. There are two channels: `0` and `1`.
-* `sine_frequency: float` The frequency of the sine waveform in Hz. Valid range from 1 Hz (`1`) to 31.25kHz (`31250`)
+* `pwm_frequency: float `: The frequency of the PWM waveform in Hz. Valid range from 1 Hz (`1`) to 100kHz (`100000`)
+* `pwm_duty_cycle: float `: The duty cycle of the PWM waveform. Valid range from 0% (`0`) to 100% (`100`) duty cycle.
 
 ### Optional Arguments
 
-* `total_cycle_count: int` The total number of cycles you want to output after a single start command.
-    * Valid range from 1 cycle (`1`) to 10000 cycles (`10000`).
-    * Omit this optional parameter if you want the PWM waveform to continue until stopped with a stop command.  
-* `amplitude: float` The sine wave will range from 0V to the maximum amplitude you specify.
-    * Valid range from 0.1V (`0.1`) to 5V (`5`).
-    * Omitting this optional parameters will result in the sine wave ranging between 0 and 5 volts.
-
-### Example Code
-
-```python
-
-# Create MagicDAQDevice() object
-daq_one = MagicDAQDevice()
-
-# Configure sine wave output on AO0 with 500Hz, indefinente operation, and 4V amplitude
-daq_one.configure_analog_output_sine_wave(0, 500, amplitude=4)
-
-```
+* `total_cycle_count: int `: The total number of pulses you want the PWM to output after a single start_pwm_output() command.
+    * Valid range from 1 pulse (`1`) to 65535 pulses (`65535`).
+    * Omit this optional parameter if you want the PWM waveform to continue until stopped with a stop_pwm_output() command.
