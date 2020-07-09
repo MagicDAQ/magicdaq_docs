@@ -1,16 +1,3 @@
----
-category: Basic Analog Input
-title: 'Basic Analog Input Example'
-type: 'Analog-Input'
-url_path: 'CODE EXAMPLE'
-
-layout: default
----
-
-### Example Code
-
-```python
-
 # Use the USB cable to plug MagicDAQ into your computer
 
 # Import MagicDAQDevice object
@@ -34,12 +21,3 @@ print('Differential voltage measurement between pin AI1 and pin AI2: '+str(pin_1
 
 # We are done using the MagicDAQ, so close it
 daq_one.close_daq_device()
-
-```
-
-### Expected Output
-
-```
-Single ended analog input voltage measurement on pin AI0: 0.51
-Differential voltage measurement between pin AI1 and pin AI2: 0.00
-```

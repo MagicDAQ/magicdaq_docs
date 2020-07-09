@@ -12,7 +12,7 @@ Method configures analog output sine wave.
 ### Definition 
 
 ```python
-configure_analog_output_sine_wave(channel, sine_frequency, total_cycle_count=0, amplitude=5)
+configure_analog_output_sine_wave(channel: int, sine_frequency: float, total_cycle_count=0, amplitude=5)
 ```
 
 ### Required Arguments
@@ -28,15 +28,3 @@ configure_analog_output_sine_wave(channel, sine_frequency, total_cycle_count=0, 
 * `amplitude: float` The sine wave will range from 0V to the maximum amplitude you specify.
     * Valid range from 0.1V (`0.1`) to 5V (`5`).
     * Omitting this optional parameters will result in the sine wave ranging between 0 and 5 volts.
-
-### Example Code
-
-```python
-
-# Create MagicDAQDevice() object
-daq_one = MagicDAQDevice()
-
-# Configure sine wave output on AO0 with 500Hz, indefinente operation, and 4V amplitude
-daq_one.configure_analog_output_sine_wave(0, 500, amplitude=4)
-
-```
