@@ -25,4 +25,4 @@ read_digital_input(channel: int)
 
 ### Returns
 
-* pin_status : int : `1` = High, `0` = Low
+* `pin_status : int` : `1` = High, `0` = Low

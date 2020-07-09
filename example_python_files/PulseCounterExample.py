@@ -1,16 +1,3 @@
----
-category: Pulse Counter
-title: 'Pulse Counter Example'
-type: 'Counter'
-url_path: 'CODE EXAMPLE'
-
-layout: default
----
-
-### Example Code
-
-```python
-
 # Use the USB cable to plug MagicDAQ into your computer
 
 # Import standard time module
@@ -42,15 +29,3 @@ print('Pulse count after clearing: '+str(daq_one.read_pulse_counter()))
 
 # We are done using the MagicDAQ, so close it
 daq_one.close_daq_device()
-
-```
-
-### Expected Output
-
-```
-Pausing for 15 sec to allow time to read pulses.
-Briefly join together pins CTRO and DGND repeatedly to simulate pulses.
-Number of pulses counted: 1531
-Now clearing the pulse counter
-Pulse count after clearing: 0
-```
