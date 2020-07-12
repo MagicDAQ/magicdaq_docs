@@ -7,36 +7,23 @@ url_path: 'AI0 - AI7'
 layout: default
 ---
 
-Method configures analog output sine wave.
+Method returns all data available in the streaming data buffer.
 
 ### Definition 
 
 ```python
-configure_analog_output_sine_wave(channel, sine_frequency, total_cycle_count=0, amplitude=5)
+get_full_streaming_data_buffer(only_new_data = True, read_and_delete = False)
 ```
-
-### Required Arguments
-
-* `channel: int` DAQ pin number. For example, channel 'AO0' is Analog Output pin `0`. There are two channels: `0` and `1`.
-* `sine_frequency: float` The frequency of the sine waveform in Hz. Valid range from 1 Hz (`1`) to 31.25kHz (`31250`)
 
 ### Optional Arguments
 
-* `total_cycle_count: int` The total number of cycles you want to output after a single start command.
-    * Valid range from 1 cycle (`1`) to 10000 cycles (`10000`).
-    * Omit this optional parameter if you want the PWM waveform to continue until stopped with a stop command.  
-* `amplitude: float` The sine wave will range from 0V to the maximum amplitude you specify.
-    * Valid range from 0.1V (`0.1`) to 5V (`5`).
-    * Omitting this optional parameters will result in the sine wave ranging between 0 and 5 volts.
+* `only_new_data: bool` : When only_new_data is set to `True`, this function will only return streaming data acquired since the last time this function was called. In other words, only 'new' data is returned. Default is `only_new_data = True`. 
+* `read_and_delete: bool`: When read_and_delete is set to `True`, the data returned by this function will be deleted from the underlying streaming data buffer.
+> * Setting `read_and_delete` to `True` reduces the total amount of memory used. However, `get_last_n_streaming_data_samples()` will not be able to return any data that has been previously deleted from the streaming data buffer by this function. Default is `read_and_delete = False`.
 
-### Example Code
+### Returns
 
-```python
-
-# Create MagicDAQDevice() object
-daq_one = MagicDAQDevice()
-
-# Configure sine wave output on AO0 with 500Hz, indefinente operation, and 4V amplitude
-daq_one.configure_analog_output_sine_wave(0, 500, amplitude=4)
-
-```
+* `[[float]]` : All data in the streaming data buffer. Data is returned as a list of data lists.
+> * For example, streaming only channel 0 might return `[[0.5,0.5,0.5]]`
+> * Streaming both channel 0 and chanel 1 might return `[[0.5,0.5,0.5],[1.5,1.5,1.5]]`
+> * Channel data is returned in order of increasing channel number. For example, if channel 0 is being streamed it's data list is always returned at index 0. 

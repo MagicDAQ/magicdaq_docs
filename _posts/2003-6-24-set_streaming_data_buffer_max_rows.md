@@ -7,36 +7,16 @@ url_path: 'AI0 - AI7'
 layout: default
 ---
 
-Method configures analog output sine wave.
+Method sets the maximum number of rows allowed in the streaming data storage buffer. The default (if this function is not used) is 480000 (roughly 0.8Gb if all 8 channels are streamed and the buffer is full). Each row is 192 bytes maximum.
+* Most users do not use this method. 
+* Only use this method if you need to tightly control the amount of memory your application consumes during runtime.
 
 ### Definition 
 
 ```python
-configure_analog_output_sine_wave(channel, sine_frequency, total_cycle_count=0, amplitude=5)
+set_streaming_data_buffer_max_rows(max_rows: int)
 ```
 
 ### Required Arguments
 
-* `channel: int` DAQ pin number. For example, channel 'AO0' is Analog Output pin `0`. There are two channels: `0` and `1`.
-* `sine_frequency: float` The frequency of the sine waveform in Hz. Valid range from 1 Hz (`1`) to 31.25kHz (`31250`)
-
-### Optional Arguments
-
-* `total_cycle_count: int` The total number of cycles you want to output after a single start command.
-    * Valid range from 1 cycle (`1`) to 10000 cycles (`10000`).
-    * Omit this optional parameter if you want the PWM waveform to continue until stopped with a stop command.  
-* `amplitude: float` The sine wave will range from 0V to the maximum amplitude you specify.
-    * Valid range from 0.1V (`0.1`) to 5V (`5`).
-    * Omitting this optional parameters will result in the sine wave ranging between 0 and 5 volts.
-
-### Example Code
-
-```python
-
-# Create MagicDAQDevice() object
-daq_one = MagicDAQDevice()
-
-# Configure sine wave output on AO0 with 500Hz, indefinente operation, and 4V amplitude
-daq_one.configure_analog_output_sine_wave(0, 500, amplitude=4)
-
-```
+* `max_rows : int` : Maximum number of rows allowed for the streaming data buffer. Valid entries between `1000` and `10000000` inclusive.
