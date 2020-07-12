@@ -7,6 +7,6 @@ Check out [magicdaq.com](https://www.magicdaq.com/) for more information on the 
 
 * This website is built for [Github Pages](https://pages.github.com/) and is powered by [Jekyll](https://jekyllrb.com/)
 * It is built on top of a modified version of the [Carte Theme](https://github.com/Wiredcraft/carte)
-* > Big thank you to the team over at Carte!
+    * Big thank you to the team over at Carte!
 * Please feel free to fork this repo and use the underlying structure to document your own projects if you would like.
-> * We found and fixed a couple bugs in the Carte Theme while working on this project - you may want to use this repo as a starting place or do a diff between this repo and Carte.
+    * We found and fixed a couple bugs in the Carte Theme while working on this project - you may want to use this repo as a starting place or do a diff between this repo and Carte.
