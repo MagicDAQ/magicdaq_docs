@@ -4,7 +4,10 @@ title: 'Install MagicDAQ'
 layout: default
 ---
 
-### Prerequisites  
+### MagicDAQ Hardware
+To use this API, you will need the MagicDAQ hardware, which you can find at [magicdaq.com](https://www.magicdaq.com/)
+
+### Python 3 on Windows
 MagicDAQ must be run with Python 3 on Windows. MagicDAQ is downloaded using pip.
 
 * You can download the latest version of Python [here](https://www.python.org/downloads/)

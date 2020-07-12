@@ -24,6 +24,6 @@ get_full_streaming_data_buffer(only_new_data = True, read_and_delete = False)
 ### Returns
 
 * `[[float]]` : All data in the streaming data buffer. Data is returned as a list of data lists.
-> * For example, streaming only channel 0 might return `[[0.5,0.5,0.5]]`
-> * Streaming both channel 0 and chanel 1 might return `[[0.5,0.5,0.5],[1.5,1.5,1.5]]`
-> * Channel data is returned in order of increasing channel number. For example, if channel 0 is being streamed it's data list is always returned at index 0. 
+> * For example, if only channel 0 hs been streamed it might return `[[0.5,0.5,0.5]]`
+> * If both channel 0 and chanel 1 have been streamed, it might return `[[0.5,0.5,0.5],[1.5,1.5,1.5]]`
+> * Channel data is returned in order of increasing channel number. For example, if channel 0 has been streamed it's data list is always returned at index 0. 
