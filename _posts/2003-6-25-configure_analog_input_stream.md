@@ -8,6 +8,7 @@ layout: default
 ---
 
 Method configures single ended analog input stream.
+* Streaming supports single ended measurement only (voltage between AI pin and AGND)
 
 ### Definition 
 
