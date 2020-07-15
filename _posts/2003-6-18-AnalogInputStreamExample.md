@@ -8,6 +8,9 @@ layout: default
 ---
 
 ### Example Code
+
+[Source File](https://github.com/MagicDAQ/magicdaq_docs/tree/master/example_python_files)
+
 ```python
 
 # Use the USB cable to plug MagicDAQ into your computer

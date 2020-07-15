@@ -49,7 +49,7 @@ For full debug output enter:
 ### Authorize Driver Install
 
 If this is your first time installing MagicDAQ, you will need to allow MagiDAQ to install it's driver on your computer.
-During the instillation process, two pop ups will appear - please approve them.
+* During the instillation process, two pop ups will appear - please approve them.
 
 ![Alt Text](images/driver_installer_auth.png)
 
