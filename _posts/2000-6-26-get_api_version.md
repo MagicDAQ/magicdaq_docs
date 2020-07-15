@@ -1,6 +1,7 @@
 ---
 category: Support
 title: 'Get API Version'
+type: 'System'
 
 layout: default
 ---

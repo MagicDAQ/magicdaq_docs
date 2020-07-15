@@ -1,5 +1,6 @@
 ---
 title: 'Install MagicDAQ'
+type: 'System'
 
 layout: default
 ---

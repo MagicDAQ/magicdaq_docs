@@ -1,5 +1,6 @@
 ---
 title: 'Check MagicDAQ Install'
+type: 'System'
 url_path: 'CODE EXAMPLE'
 
 layout: default

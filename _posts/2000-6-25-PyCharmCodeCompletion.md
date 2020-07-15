@@ -1,6 +1,7 @@
 ---
 category: Support
 title: 'PyCharm Code Completion'
+type: 'System'
 
 layout: default
 ---
