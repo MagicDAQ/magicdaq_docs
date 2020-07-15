@@ -51,9 +51,9 @@ For full debug output enter:
 If this is your first time installing MagicDAQ, you will need to allow MagiDAQ to install it's driver on your computer.
 During the instillation process, two pop ups will appear - please approve them.
 
-![Alt Text](https://github.com/MagicDAQ/magicdaq_docs/blob/master/images/driver_installer_auth.png)
+![Alt Text](https://github.com/magicdaq/magicdaq_docs/blob/master/images/driver_installer_auth.png)
 
-![Alt Text](https://github.com/MagicDAQ/magicdaq_docs/blob/master/images/driver_auth.png)  
+![Alt Text](https://github.com/magicdaq/magicdaq_docs/blob/master/images/driver_auth.png)  
 
 [MagicDAQ is hosted on PyPi](https://pypi.org/project/magicdaq/)
 
