@@ -36,5 +36,20 @@ Open a command prompt and enter:
 
 `python -m pip magicdaq`
 
+### Upgrading an Existing Instillation of MagicDAQ
+
+Open a command prompt and enter:
+
+`python -m pip magicdaq --upgrade`
+
+For full debug output enter:
+
+`python -m pip magicdaq --upgrade -v`
+
+### Authorize Driver Install
+
+If this is your first time installing MagicDAQ, you will need to allow MagiDAQ to install it's driver on your computer.
+During the instillation process, two pop ups will appear - please approve them.  
+
 [MagicDAQ is hosted on PyPi](https://pypi.org/project/magicdaq/)
 
