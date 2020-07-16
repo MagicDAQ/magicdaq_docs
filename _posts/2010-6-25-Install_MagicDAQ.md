@@ -37,8 +37,8 @@ Open a command prompt and enter:
 
 `python -m pip install magicdaq`
 
+* To upgrade an existing magicdaq instillation to the latest version, add `--upgrade` to the end of the above command
 * To see install debug output, add `-v` to the end of above command
-* To upgrade an existing magicdaq instillation, add `--upgrade` to the end of the above command
 
 ### Authorize Driver Install
 
