@@ -10,3 +10,6 @@ _site/
 /example_python_files/MultipleDAQSExample.py
 /not_yet_published
 /venv
+/M&ATestCode
+/example_python_files/M&ATestCode.py
+/example_python_files/MATestCode.py
