@@ -16,9 +16,9 @@ MagicDAQ Hardware Docs:
 
 All hardware documentation can be found at [MagicDAQ.com](https://www.magicdaq.com/product/magic-daq/)
 
-* [Data Sheet](https://www.magicdaq.com/wp-content/uploads/2020/06/MagicDAQDataSheetREV10.pdf)
-* [3D Model (.stp)](https://www.magicdaq.com/wp-content/uploads/2020/06/MDAQ300STEPModelREV10.zip)
-* [Mechanical Drawing](https://www.magicdaq.com/wp-content/uploads/2020/06/MagicDAQMDAQ300MechanicalDRWREV10.pdf)
+* [Data Sheet](https://www.magicdaq.com/mdaq300datasheet/)
+* [3D Model (.stp)](https://www.magicdaq.com/mdaq300model/)
+* [Mechanical Drawing](https://www.magicdaq.com/mdaq300mechdrw/)
 
 ### Getting Started with MagicDAQ
 
@@ -40,17 +40,17 @@ M&A Board Key Features:
 * 3 Current measurement circuits, 5A maximum
 * 1 Low current measurement circuit, measures uAs
 * 4 Temperature measurement probes, -55C to 125C range
-* 4 Switching relays, 10A maximum switching capacity
-* 1 Variable voltage power output , 1V to 10V range, 2A maximum current output
-* 2 Fixed voltage power outputs, 3.3V and 12V outputs, 2A maximum current output
+* 4 Switching relays, 7A maximum switching capacity
+* 1 Variable voltage power output, 1V to 10V range, 2A maximum current output
+* 2 Fixed voltage power outputs: 3.3V, 0.5A Max and 12V, 1A Max
 
 M&A Board Hardware Docs:
 
 All hardware documentation can be found at [MagicDAQ.com](https://www.magicdaq.com/product/ma-board-full-kit/)
 
-* [Data Sheet](https://www.magicdaq.com/wp-content/uploads/2020/07/MABoardDataSheetREV10.pdf)
-* [3D Model (.stp)](https://www.magicdaq.com/wp-content/uploads/2020/07/MABoard3DModels.zip)
-* [Mechanical Drawing](https://www.magicdaq.com/wp-content/uploads/2020/07/MABoardMDAQ350MechanicalDRWREV10.pdf)
+* [Data Sheet](https://www.magicdaq.com/mdaq350datasheet/)
+* [3D Model (.stp)](https://www.magicdaq.com/mdaq350model/)
+* [Mechanical Drawing](https://www.magicdaq.com/mdaq350mechdrw/)
 
 ### API Docs Website Tech Details
 
