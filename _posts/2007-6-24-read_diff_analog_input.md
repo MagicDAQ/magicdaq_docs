@@ -9,7 +9,7 @@ layout: default
 
 Method reads the differential voltage between two analog input pins.
 * A 'differential' measurement is performed, meaning voltage is measured between two analog input pins.
-* The maximum input voltage for each analog input pins is +/- 10V (referenced to AGND)
+* The maximum input voltage for each analog input pin is +/- 10V (referenced to AGND)
 
 ### Definition 
 

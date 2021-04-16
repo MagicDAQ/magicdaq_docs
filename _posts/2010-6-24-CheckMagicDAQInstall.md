@@ -16,7 +16,7 @@ You can check that MagicDAQ is installed properly by running the following code.
 ```python
 
 # This script checks that the MagicDAQ API and MagicDAQ Driver were installed properly
-# It is NOT NECESSARY to have the MagiDAQ connected to the computer
+# It is NOT NECESSARY to have the MagicDAQ connected to the computer
 
 print('*** MagicDAQ Install Check***')
 print('')

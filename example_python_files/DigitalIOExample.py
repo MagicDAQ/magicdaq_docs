@@ -11,9 +11,9 @@ daq_one.open_daq_device()
 
 # Read Pin P0.0 State
 # If no external voltage is applied to the DAQ, the internal pull up resistor will ensure this pin is HIGH
-print ('This is Digital Pin P0.0 State: '+str(daq_one.read_digital_input(0)))
+print('This is Digital Pin P0.0 State: '+str(daq_one.read_digital_input(0)))
 
-print ('Now setting P0.1 to LOW.')
+print('Now setting P0.1 to LOW.')
 # Set Pin P0.1 to LOW
 daq_one.set_digital_output(1,0)
 
