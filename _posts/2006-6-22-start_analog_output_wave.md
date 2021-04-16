@@ -9,7 +9,7 @@ layout: default
 
 Method starts the analog output wave.
 
-* You must configure the analog output port for a wave before using this command to start the wave.
+* You must configure the analog output pin to produce a wave before using this command to start the wave.
 * See methods `configure_analog_output_sine_wave()` and `configure_analog_output_pwm_wave()`
 
 ### Definition 

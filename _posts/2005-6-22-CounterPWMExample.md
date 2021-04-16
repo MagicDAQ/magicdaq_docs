@@ -30,10 +30,10 @@ daq_one.open_daq_device()
 # Configure a 50 KHz frequency, 75% duty cycle, 3.3V amplitude, continuous PWM Wave on the counter pin (CTR0)
 daq_one.configure_counter_pwm(50000,75)
 
-# Start both AO0 and AO1 waves
+# Start the counter PWM wave
 daq_one.start_counter_pwm()
 
-print ('Pausing for 10 sec to allow time to observe with oscilloscope waveform on pin CTR0')
+print('Pausing for 10 sec to allow time to observe with oscilloscope waveform on pin CTR0')
 time.sleep(10)
 
 # Now stopping the counter PWM wave
