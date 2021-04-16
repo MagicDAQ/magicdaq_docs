@@ -7,7 +7,7 @@ url_path: 'CTR0'
 layout: default
 ---
 
-Method re-sets pulse count to 0.
+Method resets pulse count to 0.
 
 ### Definition 
 
