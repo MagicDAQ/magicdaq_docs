@@ -19,7 +19,7 @@ configure_counter_pwm(pwm_frequency: float, pwm_duty_cycle: float, total_cycle_c
 
 ### Required Arguments
 
-* `pwm_frequency: float `: The frequency of the PWM waveform in Hz. Valid range from 1 Hz (`1`) to 100kHz (`100000`)
+* `pwm_frequency: float `: The frequency of the PWM waveform in Hz. Valid range from 1 Hz (`1`) to 65.535kHz (`65535`)
 * `pwm_duty_cycle: float `: The duty cycle of the PWM waveform. Valid range from 0% (`0`) to 100% (`100`) duty cycle.
 
 ### Optional Arguments
