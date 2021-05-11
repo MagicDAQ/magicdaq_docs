@@ -8,8 +8,7 @@ MagicDAQ Key Features:
 * 8 Digital inputs / outputs, 0 to 5V range
 * 2 Analog outputs / PWM outputs / sine wave outputs, 0 to 5V range
 * 1 Pulse counter / PWM output, 0 to 3.3V range 
-* Electrically isolated - the DAQ ground and the USB power supply ground are not electrically connected. 
-    * Isolation improves the accuracy of measurements by preventing electrical noise from the power supply and connected computer from coupling into the measurement circuitry.
+* USB Powered
 * Well documented [Python API](https://magicdaq.github.io/magicdaq_docs/) contains code examples for all functions.
 
 MagicDAQ Hardware Docs:
