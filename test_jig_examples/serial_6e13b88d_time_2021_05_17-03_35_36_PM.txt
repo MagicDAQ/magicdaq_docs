@@ -1,0 +1,25 @@
+--- Test Jig Log File ---
+
+Board Serial #: 6e13b88d
+Date / Time: 2021_05_17-03_35_36_PM
+
+--- Testing Voltage Rails ---
+
+Main Rail Voltage (should be 3.3V): 3.1
+PASS
+
+USB Voltage (should be 5.0V): 4.85
+PASS
+
+--- Testing Current Draw ---
+
+Board Current Draw - Standard Operation (Should be 1Amp +/- .2A): 1.1
+PASS
+
+Board Current Draw - Load Connected (Should be 1.5Amp +/- .2A): 1.1
+PASS
+
+Board Current Draw - Sleep Mode (Should be 150uA +/- 20uA): 147.735
+PASS
+
+--- Testing Complete ---
