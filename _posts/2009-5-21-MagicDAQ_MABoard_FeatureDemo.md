@@ -1,5 +1,5 @@
 ---
-category: Getting Started
+category: Demo Scripts
 title: 'MagicDAQ / M&A Board Feature Demo'
 type: 'System'
 url_path: 'CODE EXAMPLE'

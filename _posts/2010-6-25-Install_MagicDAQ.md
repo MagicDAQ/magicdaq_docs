@@ -33,11 +33,15 @@ If you need a bit of help getting started with MagicDAQ, feel free to email us a
 
 ### Install MagicDAQ with Pip
 
-Open a command prompt and enter:
+To install MagicDAQ for the first time, open a command prompt and enter:
 
 `python -m pip install magicdaq`
 
-* To upgrade an existing magicdaq instillation to the latest version, add `--upgrade` to the end of the above command
+To upgrade an existing instillation of MagicDAQ, open a command prompt and enter:
+
+`python -m pip install magicdaq --upgrade`
+
+* [MagicDAQ is hosted on PyPi](https://pypi.org/project/magicdaq/). The PyPi page shows the latest version number for the MagicDAQ package. 
 * To see install debug output, add `-v` to the end of above command
 
 ### Authorize Driver Install
@@ -47,7 +51,5 @@ If this is your first time installing MagicDAQ, you will need to allow MagicDAQ 
 
 ![Alt Text](images/driver_installer_auth.png)
 
-![Alt Text](images/driver_auth.png)  
-
-[MagicDAQ is hosted on PyPi](https://pypi.org/project/magicdaq/)
+![Alt Text](images/driver_auth.png) 
 
