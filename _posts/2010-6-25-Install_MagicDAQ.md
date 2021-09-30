@@ -8,11 +8,12 @@ layout: default
 ### MagicDAQ Hardware
 To use this API, you will need the MagicDAQ hardware, which you can find at [magicdaq.com](https://www.magicdaq.com/)
 
-### Python 3 on Windows
+### Python 3 on Windows Only
 MagicDAQ must be run with Python 3 on Windows. MagicDAQ is downloaded using pip.
 
 * You can download the latest version of Python [here](https://www.python.org/downloads/)
 * Don't forget to [add Python to the Windows PATH](https://datatofish.com/add-python-to-windows-path/)
+* MagicDAQ only works on Windows. Linux and Mac are not supported due to hardware driver constraints.
 
 You can test if your system is ready to go by [opening a command prompt](https://www.lifewire.com/how-to-open-command-prompt-2618089) and entering:
 
