@@ -1,3 +1,25 @@
+---
+category: Multiple DAQs
+title: 'Multiple DAQs Example'
+type: 'System'
+url_path: 'CODE EXAMPLE'
+
+layout: default
+---
+
+### Use Multiple DAQs Simultaneously 
+You can use multiple DAQs at the same. You must be using MagicDAQ API version 1.9.0 (released 3/3/22) or later to use this feature.
+
+To upgrade an existing instillation of MagicDAQ, open a command prompt and enter:
+
+`python -m pip install magicdaq --upgrade`
+
+### Multiple DAQs Example
+
+[Source File](https://github.com/MagicDAQ/magicdaq_docs/tree/master/example_python_files)
+
+```python
+
 # Connect one or more MagicDAQs to your system using the USB cables.
 # Feel free to use a USB hub to connect multiple DAQs to your computer.
 
@@ -64,4 +86,19 @@ if len(daqs_serial_number_list) >= 1:
 if len(daqs_serial_number_list) >= 2:
     daq_two.close_daq_device()
 
+```
 
+### Expected Output
+
+```
+List of DAQ Serial Numbers: ['931c9aa6', '931cd19e']
+There are 2 DAQs in total connected to your computer.
+
+daq_one serial number:  931c9aa6
+Setting Pin P0.0 HIGH on daq_one
+
+daq_two serial number:  931cd19e
+Setting Pin P0.0 LOW on daq_two
+
+Sleeping for 30 sec so you can measure the digital output pins with a multimeter
+```

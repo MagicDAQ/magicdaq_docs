@@ -1,5 +1,5 @@
 ---
-category: Get System Info
+category: Multiple DAQs
 title: 'get_serial_number()'
 type: 'System'
 

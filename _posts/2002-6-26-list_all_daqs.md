@@ -1,5 +1,5 @@
 ---
-category: Get System Info
+category: Multiple DAQs
 title: 'list_all_daqs()'
 type: 'System'
 
